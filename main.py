@@ -6,10 +6,7 @@ from google.genai import types
 
 load_dotenv()
 
-
-# Weather tool that the AI can call
 def get_weather(city: str):
-    # First, find the city's coordinates
     geo_url = "https://geocoding-api.open-meteo.com/v1/search"
 
     geo_params = {
@@ -34,7 +31,6 @@ def get_weather(city: str):
     latitude = location["latitude"]
     longitude = location["longitude"]
 
-    # Now get the weather using the coordinates
     weather_url = "https://api.open-meteo.com/v1/forecast"
 
     weather_params = {
