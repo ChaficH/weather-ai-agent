@@ -70,7 +70,7 @@ def main():
     )
 
     chat = client.chats.create(
-        model="gemini-2.5-flash",
+        model="gemini-3.6-flash",
         config=config
     )
 
